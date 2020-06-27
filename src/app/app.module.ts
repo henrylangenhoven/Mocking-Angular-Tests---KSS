@@ -7,6 +7,8 @@ import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentLeftComponent } from './content/content-left/content-left.component';
 import { ContentRightComponent } from './content/content-right/content-right.component';
+import { ContentTopComponent } from './content/content-top/content-top.component';
+import { ContentBottomComponent } from './content/content-bottom/content-bottom.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ContentRightComponent } from './content/content-right/content-right.com
     ContentComponent,
     FooterComponent,
     ContentLeftComponent,
-    ContentRightComponent
+    ContentRightComponent,
+    ContentTopComponent,
+    ContentBottomComponent
   ],
   imports: [
     BrowserModule

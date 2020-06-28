@@ -1,1 +1,54 @@
-<p>content-top works!</p>
+<p>Top Component</p>
+
+<div class="form-group">
+  <label for="item">Add item</label>
+  <input
+    type="text"
+    class="form-control"
+    id="item"
+    [(ngModel)]="itemText"
+    autocomplete="off"
+  />
+</div>
+<div class="form-check">
+  <input
+    class="form-check-input"
+    type="radio"
+    name="exampleRadios"
+    id="exampleRadios1"
+    value="left"
+    [(ngModel)]="selectedRadioButtonValue"
+  />
+  <label class="form-check-label" for="exampleRadios1">
+    Add to Left list
+  </label>
+</div>
+<div class="form-check">
+  <input
+    class="form-check-input"
+    type="radio"
+    name="exampleRadios"
+    id="exampleRadios2"
+    value="right"
+    [(ngModel)]="selectedRadioButtonValue"
+  />
+  <label class="form-check-label" for="exampleRadios2">
+    Add to Right list
+  </label>
+</div>
+<div class="form-check">
+  <input
+    class="form-check-input"
+    type="radio"
+    name="exampleRadios"
+    id="exampleRadios3"
+    value="bottom"
+    [(ngModel)]="selectedRadioButtonValue"
+  />
+  <label class="form-check-label" for="exampleRadios3">
+    Add to Bottom list
+  </label>
+</div>
+<button type="button" class="btn btn-light mt-2" (click)="add()">
+  Add <strong>+</strong>
+</button>

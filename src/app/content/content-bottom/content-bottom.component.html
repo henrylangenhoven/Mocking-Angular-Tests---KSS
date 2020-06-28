@@ -1,1 +1,15 @@
-<p>Content Bottom</p>
+<p>Bottom Component</p>
+<ul>
+  <li *ngFor="let item of list | async">
+    <ul class="list-unstyled">
+      <li>{{ item.text }}</li>
+      <li>{{ item.id }}</li>
+      <li>{{ item.listId }}</li>
+      <li>
+        <a href="#" (click)="moveItemLeft(item)"> < </a>
+        <a href="#" (click)="deleteItem(item)"> x </a>
+        <a href="#" (click)="moveItemRight(item)"> > </a>
+      </li>
+    </ul>
+  </li>
+</ul>

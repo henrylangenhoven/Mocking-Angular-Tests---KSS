@@ -1,6 +1,10 @@
-# MocksKss
+# Mocking Angular Tests - Knowledge Share Session - Hosted by Entelect
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
+
+## Presentation Slides
+
+The presentation slides for this can be viewed on [Google Slides](https://docs.google.com/presentation/d/1agS7BNAF6XotDHaWTXab-jILRq-k34UFuPSM6G88KKY/edit?usp=sharing).
 
 ## Development server
 

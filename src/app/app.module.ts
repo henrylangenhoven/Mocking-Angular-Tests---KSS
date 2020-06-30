@@ -9,6 +9,7 @@ import { ContentRightComponent } from './content/content-right/content-right.com
 import { ContentTopComponent } from './content/content-top/content-top.component';
 import { ContentBottomComponent } from './content/content-bottom/content-bottom.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { FormsModule } from '@angular/forms';
     ContentTopComponent,
     ContentBottomComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

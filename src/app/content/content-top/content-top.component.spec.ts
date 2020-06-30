@@ -8,9 +8,12 @@ describe('ContentTopComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContentTopComponent ]
-    })
-    .compileComponents();
+      declarations: [
+        ContentTopComponent,
+        // MockDirective(NgModel)
+      ],
+      // imports: [HttpClientModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

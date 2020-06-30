@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Item } from './item.model';
 import { BehaviorSubject } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { take } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +12,7 @@ export class ListService {
 
   list = new BehaviorSubject<Item[]>([]);
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   addToList(value: string, list: 'left' | 'right' | 'bottom') {
     const item: Item = {
@@ -20,6 +22,13 @@ export class ListService {
       timeCreated: new Date().getTime(),
     };
     this.list.next(this.list.getValue().concat(item));
+
+    this.http
+      .get('assets/config.json')
+      .pipe(take(1))
+      .subscribe((value) => {
+        console.log(value);
+      });
   }
 
   updateListId(item: Item, newList: 'left' | 'right' | 'bottom') {

@@ -1,0 +1,4 @@
+{
+  "serviceUrl": "api/someExternalService",
+  "textfile": "assets/textfile.txt"
+}

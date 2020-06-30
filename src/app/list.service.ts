@@ -17,6 +17,7 @@ export class ListService {
       text: value,
       id: this.counter++,
       listId: list,
+      timeCreated: new Date().getTime(),
     };
     this.list.next(this.list.getValue().concat(item));
   }

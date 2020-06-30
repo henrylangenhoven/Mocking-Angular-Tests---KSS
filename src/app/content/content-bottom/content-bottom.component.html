@@ -5,6 +5,7 @@
       <li>{{ item.text }}</li>
       <li>{{ item.id }}</li>
       <li>{{ item.listId }}</li>
+      <li>{{ item.timeCreated | date: "short" }}</li>
       <li>
         <a href="#" (click)="moveItemLeft(item)"> < </a>
         <a href="#" (click)="deleteItem(item)"> x </a>

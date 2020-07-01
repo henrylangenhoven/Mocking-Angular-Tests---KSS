@@ -3,14 +3,15 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ContentComponent } from './content.component';
 import { ContentTopComponent } from './content-top/content-top.component';
 import { ContentLeftComponent } from './content-left/content-left.component';
-import { ContentRightComponent } from './content-right/content-right.component';
 import { ContentBottomComponent } from './content-bottom/content-bottom.component';
+import { ContentRightComponent } from './content-right/content-right.component';
 import { FormsModule } from '@angular/forms';
 
 describe('ContentComponent', () => {
   let component: ContentComponent;
   let fixture: ComponentFixture<ContentComponent>;
 
+  //TODO Example 5: example of external dependencies causing unrelated dependencies
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
